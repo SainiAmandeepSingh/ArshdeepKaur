@@ -1,48 +1,86 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 0;
-}
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-}
-.hero {
-    text-align: center;
-    padding: 50px 0;
-}
-main {
-    padding: 20px;
-}
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-.social-links a {
-    margin: 0 10px;
-    color: #fff;
-    text-decoration: none;
-}
-.banner {
-    margin-top: 10px;
-}
-@media (max-width: 600px) {
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
+diff --git a//dev/null b/css/style.css
+index 0000000000000000000000000000000000000000..4c83fa880cc13745611eccb45b6eb7349f9337ff 100644
+--- a//dev/null
++++ b/css/style.css
+@@ -0,0 +1,81 @@
++body {
++    font-family: Arial, sans-serif;
++    margin: 0;
++}
++
++.sidebar {
++    width: 200px;
++    background: #333;
++    color: #fff;
++    position: fixed;
++    top: 0;
++    bottom: 0;
++    left: 0;
++}
++
++.sidebar .brand {
++    text-align: center;
++    padding: 20px 0;
++    font-size: 1.5em;
++    border-bottom: 1px solid #444;
++}
++
++.sidebar ul {
++    list-style: none;
++    padding: 0;
++    margin: 0;
++}
++
++.sidebar a {
++    display: flex;
++    align-items: center;
++    color: #fff;
++    text-decoration: none;
++    padding: 15px;
++}
++
++.sidebar a i {
++    margin-right: 10px;
++}
++
++.sidebar a:hover {
++    background: #444;
++}
++
++.content {
++    margin-left: 200px;
++    padding: 20px;
++}
++
++.hero {
++    text-align: center;
++    padding: 50px 0;
++}
++
++footer {
++    background: #333;
++    color: #fff;
++    text-align: center;
++    padding: 20px 0;
++    margin-top: 20px;
++}
++
++.social-links a {
++    margin: 0 10px;
++    color: #fff;
++    text-decoration: none;
++}
++
++.banner {
++    margin-top: 10px;
++}
++
++@media (max-width: 600px) {
++    .sidebar {
++        width: 160px;
++    }
++
++    .content {
++        margin-left: 160px;
++    }
++}
