@@ -316,6 +316,11 @@ img {
   flex-direction: column;
   text-align: center;
 }
+.skills__row .skills__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .skills__desc {
   font-size: var(--smaller-font-size);
   margin-top: 0.5rem;
