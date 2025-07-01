@@ -309,6 +309,12 @@ img {
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  flex-direction: column;
+  text-align: center;
+}
+.skills__desc {
+  font-size: var(--smaller-font-size);
+  margin-top: 0.5rem;
 }
 .skills__icon {
   font-size: 2rem;
@@ -485,6 +491,38 @@ img {
 }
 .footer__copy {
   font-size: var(--smaller-font-size);
+}
+
+/* ===== MODAL =====*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal--show {
+  display: flex;
+}
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
 /* ===== MEDIA QUERIES=====*/
