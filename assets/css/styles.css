@@ -27,7 +27,7 @@ body {
     color: #333;
 }
 
-.skills__list, .experience__list {
+.skills__list {
     list-style: disc;
     padding-left: 1.5rem;
 }
@@ -340,6 +340,42 @@ img {
 .skills__ux {
   width: 85%;
 }
+.skills__adaptability {
+  width: 85%;
+}
+.skills__collaboration {
+  width: 90%;
+}
+.skills__communication {
+  width: 80%;
+}
+.skills__creativity {
+  width: 75%;
+}
+.skills__critical {
+  width: 88%;
+}
+.skills__digital {
+  width: 92%;
+}
+.skills__diversity {
+  width: 70%;
+}
+.skills__functional {
+  width: 95%;
+}
+.skills__leadership {
+  width: 78%;
+}
+.skills__problem {
+  width: 86%;
+}
+.skills__professional {
+  width: 82%;
+}
+.skills__awareness {
+  width: 68%;
+}
 .skills__img {
   border-radius: 0.5rem;
 }
@@ -347,6 +383,10 @@ img {
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
+}
+.experience__container {
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -358,6 +398,39 @@ img {
 }
 .work__img img:hover {
   transform: scale(1.1);
+}
+
+/* ===== EXPERIENCE =====*/
+.experience__card {
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: var(--mb-4);
+}
+.experience__header {
+  background-color: var(--first-color);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-weight: var(--font-semi);
+}
+.experience__body {
+  background-color: hsl(var(--hue-color), 100%, 95%);
+  padding: 1rem;
+}
+.experience__course {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+.experience__card:hover .experience__course {
+  color: var(--first-color);
+}
+.experience__description {
+  font-size: var(--smaller-font-size);
+  margin-bottom: 0.5rem;
 }
 
 /* ===== CONTACT =====*/
