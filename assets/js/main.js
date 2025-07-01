@@ -55,5 +55,31 @@ const sr = ScrollReveal({
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+sr.reveal('.home__social-icon',{ interval: 200});
+sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
+
+/*===== EXPERIENCE MODALS =====*/
+const modalButtons = document.querySelectorAll('.experience__button');
+const modals = document.querySelectorAll('.modal');
+
+modalButtons.forEach(btn => {
+    btn.addEventListener('click', e => {
+        e.preventDefault();
+        const target = btn.getAttribute('data-target');
+        document.getElementById(target).classList.add('modal--show');
+    });
+});
+
+document.querySelectorAll('.modal-close').forEach(close => {
+    close.addEventListener('click', () => {
+        close.parentElement.parentElement.classList.remove('modal--show');
+    });
+});
+
+modals.forEach(modal => {
+    modal.addEventListener('click', e => {
+        if (e.target === modal) {
+            modal.classList.remove('modal--show');
+        }
+    });
+});
