@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #333;
+}
+
+.skills__list, .experience__list {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+}
