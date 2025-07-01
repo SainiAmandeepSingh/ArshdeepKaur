@@ -472,6 +472,10 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
+.contact__form {
+  width: 100%;
+  padding-top: 2rem;
+}
 
 /* ===== FOOTER =====*/
 .footer {
@@ -527,6 +531,11 @@ img {
   right: 0.75rem;
   cursor: pointer;
   font-size: 1.5rem;
+  transition: color 0.2s;
+}
+.modal-close:hover,
+.modal-close:active {
+  color: blue;
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -579,7 +588,7 @@ img {
     padding-top: 2rem;
   }
   .contact__form {
-    width: 360px;
+    width: 500px;
     padding-top: 2rem;
   }
   .contact__container {
